@@ -41,7 +41,7 @@ mongoose.connect(connectionURL,{
 const db=mongoose.connection;
 db.once("open",()=>{
     console.log("db ad realtime db with pusher will work let see");
-    const msgCollection = db.collection("messageContents");
+    const msgCollection = db.collection("messagecontents");
     const changeStream = msgCollection.watch();
 
     changeStream.on("change",(change) => {
