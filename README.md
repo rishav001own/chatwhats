@@ -1,4 +1,4 @@
-# Chatwhats
+# Mern Web Application  Chatwhat!
 Mern Web Application  Chatwhat!
 
 Technology Used :-
