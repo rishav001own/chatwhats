@@ -19,7 +19,7 @@ axios
 
 
 
-In this repo there to directory:
+In this repo there two directory:
 
 chatwhatsfont is for-Frontend.
 
