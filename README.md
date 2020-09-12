@@ -3,6 +3,12 @@ Mern Web Application  Chatwhat!
 
 Technology Used :-
 
+Html
+
+Css
+
+MaterialUI
+
 Reactjs
 
 Hooks
