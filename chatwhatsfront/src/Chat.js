@@ -5,7 +5,8 @@ import { Avatar, IconButton} from "@material-ui/core";
 import InsertEmoticonIcon from '@material-ui/icons/InsertEmoticon';
 import MicIcon from '@material-ui/icons/Mic';
 
-const Chat = () => {
+const Chat = ({ messages }) => {
+    console.log(messages)
     return (
         <div className="chat">
             <div className="chat__header">
@@ -27,11 +28,14 @@ const Chat = () => {
                 </div>
             </div>
             <div className="chat__body">
-                <p className="chat__message">
-                    <span className="chat__name">rishava</span>
-                        message...... 
-                    <span className="chat__timestamp">{new Date().toUTCString()}</span>
+            {messages.map((message)=>(
+                <p className={`chat__message ${message.recevied && "chat__receiver"}`}>
+                    <span className="chat__name">{message.name}</span>
+                        {message.message}
+                    <span className="chat__timestamp">{message.timestamp}</span>
                 </p>
+            ))}
+                
                 <p className="chat__message chat__receiver">
                     <span className="chat__name">rishava</span>
                         message...... 
