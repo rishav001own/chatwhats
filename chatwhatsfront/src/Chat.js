@@ -35,6 +35,11 @@ const Chat = ({ messages }) => {
                     <span className="chat__timestamp">{message.timestamp}</span>
                 </p>
             ))}
+                <p className="chat__message chat__reciever">
+                    <span className="chat__name">rishava</span>
+                        message...... 
+                    <span className="chat__timestamp">{new Date().toUTCString()}</span>
+                </p>
             </div>
             <div className="chat__footer">
                 <InsertEmoticonIcon/>
